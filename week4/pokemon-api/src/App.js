@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pokemon</h1>
+      <h1>Fetch Pokemon</h1>
       {
         pokemonName.map((pokemon, idx) => (
           <div key={idx}>
