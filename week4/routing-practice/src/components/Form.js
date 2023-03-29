@@ -1,3 +1,4 @@
+import  './Form.css';
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -25,7 +26,7 @@ const Form = (props) => {
 
                 <div>
                     {/* <label>Set your Background Color!</label> */}
-                    <input type="text" placeholder='Set your Background Color?' onChange={(e) => setDivColor(e.target.value)} />
+                    <input type="text" placeholder='Set your Background Color!' onChange={(e) => setDivColor(e.target.value)} />
                 </div>
 
                 <div>
