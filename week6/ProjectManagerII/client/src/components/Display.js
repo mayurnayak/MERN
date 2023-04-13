@@ -18,6 +18,18 @@ const Display = (props) => {
             })
     }, [])
 
+    const deleteHandler = (id) => {
+        console.log(id)
+        axios.delete(`http://localhost:8000/api/deleteProduct/${id}`)
+            .then((res) => {
+                const updatedProductList = productList.filter((product) => product._id !== id)
+                setProductList(updatedProductList)
+            })
+            .catch((err)=> {
+                console.log(err)
+            })
+    }
+
     return (
         <div>
             <h2>All Products</h2>
@@ -28,6 +40,7 @@ const Display = (props) => {
                         <h2>Price: {product.price}</h2>
                         <h2>Description: {product.description}</h2> */}
                         <Link to={`/viewProduct/${product._id}`}>{product.title}</Link>
+                        <button onClick={()=> deleteHandler(product._id)}>Delete</button>
                     </div>
                 ))
             }

@@ -5,9 +5,9 @@ import './CreateProduct.css'
 import { useNavigate } from 'react-router-dom';
 
 const CreateProduct = (props) => {
-    const navigate= useNavigate();
-
     const { productList,setProductList} = props;
+
+    const navigate= useNavigate();
 
     const [product, setProduct] = useState({
         title: '',

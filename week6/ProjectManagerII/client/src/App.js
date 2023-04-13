@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Main from './view/main'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import OneProduct from './components/OneProduct';
+import EditProduct from './components/EditProduct';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main/>}/>
           <Route path='/viewProduct/:id' element={<OneProduct/>}/>
+          <Route path='/editProduct/:id' element={<EditProduct/>} />
         </Routes>
       </BrowserRouter>
     </div>
