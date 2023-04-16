@@ -1,0 +1,17 @@
+.displaydetails {
+    border-radius: 5px;
+    height: 60px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+} 
