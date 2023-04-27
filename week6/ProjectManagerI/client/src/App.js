@@ -1,8 +1,8 @@
 import './App.css'
 import { useState } from 'react'
 import Display from './components/Display';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import CreateProduct from './components/CreateProduct';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
@@ -19,8 +19,8 @@ function App() {
         <Link to={'/display'}>Display</Link> */}
 
         <Routes>
-          <Route path='/display' element={<Display productList={productList} setProductList={setProductList} />} />
           <Route path='/' element={<CreateProduct/>}/>
+          <Route path='/' element={<Display productList={productList} setProductList={setProductList} />} />
         </Routes>
       </BrowserRouter>
     </div>

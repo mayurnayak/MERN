@@ -1,8 +1,4 @@
-/* .container {
-    margin: 50px 0;
-} */
-
-form,
+/* form,
 .formData {
     width: 40%;
     margin: auto;
@@ -46,4 +42,44 @@ button {
     height: 40px;
     background-color: rgb(211, 211, 211);
     width: 40%; 
+} */
+
+
+
+
+.userInput {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
 }
