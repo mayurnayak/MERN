@@ -1,0 +1,12 @@
+I'm createing a TODO list app.
+
+This is a fullstack MERN application with the following feature: - 
+- User can create a new account.
+- User can login with the existing account.
+- User can Create a new item for their TODO list.
+- User can Read all the items of the ToDo list.
+- User can Update the item.
+- User can Delete the item from the list.
+- Each user will have their own list.
+- No 2 users will be able to see other's TODO list.
+- User can logout from the app.
