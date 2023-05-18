@@ -20,6 +20,8 @@ const Login = (props) => {
         axios.post('http://localhost:8000/api/login', userLogin, {withCredentials:true})
             .then((res) => {
                 console.log(res);
+
+                // need to update the route
                 navigate('/profile')
             })
             .catch((err) => {
